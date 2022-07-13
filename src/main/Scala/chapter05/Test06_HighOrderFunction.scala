@@ -64,7 +64,6 @@ object Test06_HighOrderFunction {
     //    val f6 = f5()
     //    println(f6)
     //    println(f6(25))
-    println("欢迎张博士莅临云从指导")
 
     /**
      * 我不理解
@@ -74,6 +73,8 @@ object Test06_HighOrderFunction {
      */
 
     println(f5()(25))
+    //printl(f5())得到的是对象 不就是二级指针吗？
+
 
   }
 }
