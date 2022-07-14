@@ -133,8 +133,9 @@ object Test02_ForLoop {
 
     /**
      * yield生成一个集合类型当做返回值
+     * yield 能对后面的集合类进行指定的操作·
      */
-    val b: IndexedSeq[Int] = for (i <- 1 to 10) yield i
+    val b: IndexedSeq[Int] = for (i <- 1 to 10) yield i*2
       println("b = " + b)
 
 
