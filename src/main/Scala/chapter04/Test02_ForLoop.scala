@@ -97,12 +97,6 @@ object Test02_ForLoop {
     }
     println("=========wente的结束符=========")
 
-    //循环返回值，返回的还是空值
-    val a = for (i <- 1 to 10){
-      i
-    }
-    println("a = " + a)
-
     /**
      * 嵌套循环
      */
@@ -126,6 +120,24 @@ object Test02_ForLoop {
       {
         println("i = " + i + ", j = " + j)
       }
+
+
+    /**
+     * 循环返回值
+     * 默认是空
+     */
+    val unit :Unit = for (i <- 1 to 10) {
+      "冤枉啊！"
+    }
+    println(unit) //自动推断的类型也是空值
+
+    /**
+     * yield生成一个集合类型当做返回值
+     */
+    val b: IndexedSeq[Int] = for (i <- 1 to 10) yield i
+      println("b = " + b)
+
+
 
 
 
