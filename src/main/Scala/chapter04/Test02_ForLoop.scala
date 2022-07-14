@@ -116,6 +116,16 @@ object Test02_ForLoop {
       }
     }
 
+    /**
+     * 引入变量
+     */
+    for {
+      i <- 1 to 10
+      j = 10 -i
+    }
+      {
+        println("i = " + i + ", j = " + j)
+      }
 
 
 
