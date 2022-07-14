@@ -97,6 +97,25 @@ object Test02_ForLoop {
     }
     println("=========wente的结束符=========")
 
+    //循环返回值，返回的还是空值
+    val a = for (i <- 1 to 10){
+      i
+    }
+    println("a = " + a)
+
+    /**
+     * 嵌套循环
+     */
+    for(i <- 1 to 3; j <- 1 to 3) {
+      println(" i =" + i + " j = " + j)
+    }
+
+    for (i <- 1 to 3) {
+      for (j <- 1 to 3) {
+        println("i =" + i + " j=" + j)
+      }
+    }
+
 
 
 
